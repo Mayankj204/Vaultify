@@ -4,7 +4,7 @@ import axios from 'axios';
 import { supabase } from '../supabaseClient';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:3001/api',
+  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:3001/api',
 });
 
 // This interceptor automatically adds a valid token to every request.
