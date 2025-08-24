@@ -13,7 +13,7 @@ const port = process.env.PORT || 3001;
 // Configure CORS to allow requests from your deployed frontend
 const allowedOrigins = [
   'http://localhost:3000', // For local development
-  'https://vaultify-app.onrender.com' // **REPLACE THIS with your deployed frontend URL**
+  'https://vaultify-frontend.onrender.com '// **REPLACE THIS with your deployed frontend URL**
 ];
 
 const corsOptions = {
