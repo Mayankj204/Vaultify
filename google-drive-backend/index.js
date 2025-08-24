@@ -10,10 +10,10 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // --- THIS IS THE FIX ---
-// Configure CORS to allow requests from your deployed frontend
+// This whitelist tells your server which frontend URLs are allowed to make requests.
 const allowedOrigins = [
   'http://localhost:3000', // For local development
-  'https://vaultify-frontend.onrender.com '// **REPLACE THIS with your deployed frontend URL**
+  'https://vaultify-frontend.onrender.com' // Your deployed frontend URL
 ];
 
 const corsOptions = {

@@ -2,7 +2,7 @@ import axios from 'axios';
 import { supabase } from '../supabaseClient';
 
 const apiClient = axios.create({
-  // Use the new environment variable for the deployed URL,
+  // Use the environment variable for the deployed URL,
   // but keep localhost as a fallback for when you're developing locally.
   baseURL: process.env.REACT_APP_API_URL || 'http://localhost:3001/api',
 });
